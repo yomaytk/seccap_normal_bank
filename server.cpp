@@ -18,8 +18,8 @@
 #include "deal_manager.h"
 
 const int RECEIVE_BUF_SIZE = 1024;
-// const std::string PROJECT_PATH = "/opt/intel/sgxsdk/SampleCode/seccap_sgx_bank/";
-const std::string PROJECT_PATH = "/home/masashi/workspace/seccap/seccap_normal_bank/";
+const std::string PROJECT_PATH = "/opt/intel/sgxsdk/SampleCode/seccap_normal_bank/";
+// const std::string PROJECT_PATH = "/home/masashi/workspace/seccap/seccap_normal_bank/";
 
 void account_list_store(uint8_t* account_list_data, uint64_t account_data_len) {
     std::ofstream ofs((PROJECT_PATH + "account").c_str(),
